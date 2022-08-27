@@ -10,10 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <rush01ft.h>
+#include "rush01ft.h"
 
 int	main(int argc, int *argv[])
 {
+	t_database data;
+
+	
 	if (argc == 2)
 		
 	else

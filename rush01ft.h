@@ -13,10 +13,34 @@
 #ifndef RUSH01FT_H
 # define RUSH01FT_H
 
-# include <stdlb.h>
+# include <stdlib.h>
 # include <unistd.h>
 
-typedef struct s_database{
+/*
+board
+  4 3 2 1
+4 0 0 0 0 1
+3 0 0 0 0 2
+2 0 0 0 0 2
+1 0 0 0 0 2
+  1 2 2 2
+
+board
+[[0, 0, 0, 0],
+ [0, 0, 0, 0],
+ [0, 0, 0, 0],
+ [0, 0, 0, 0]]
+
+input
+[[4, 3, 2, 1],   0
+ [1, 2, 2, 2],   1
+ [4, 3, 2, 1],   2
+ [1, 2, 2, 2]]   3
+
+  0  1  2  3
+*/
+typedef struct s_database
+{
 	int	**board;
 	int	**input;
 	int	size;
